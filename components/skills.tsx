@@ -37,7 +37,7 @@ export default function Skills() {
     >
       <SectionHeading>My skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skills.map((skill, index) => (
+        {skills.map((skill:any, index) => (
           <motion.li
             className="bg-white borderBlack rounded-xl px-5 py-3 "
             key={index}
