@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
+import {Analytics} from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
         <Header/>
         {children}
+        <Analytics/>
         <Toaster position="top-right" />
         <Footer/>
         </ActiveSectionContextProvider>
