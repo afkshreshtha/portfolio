@@ -5,6 +5,7 @@
 html {
   --line-color: #e5e7eb;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html.dark {
@@ -14,3 +15,5 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+
