@@ -7,12 +7,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
-import programer from "../public/programer.png"
+import programer from "../public/programer.png";
 import { useActiveSectionContext } from "@/context/active-section-context";
 const Intro = () => {
-  const { ref } = useSectionInView("Home",0.5);
-  const {  setActiveSection, setTimeOfLastClick } =
-  useActiveSectionContext();
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -89,9 +88,11 @@ const Intro = () => {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack "
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
           href="/CV.pdf"
           download
+          rel="noopener noreferrer"
+          target = "_blank"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -99,7 +100,7 @@ const Intro = () => {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full borderBlack focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer"
-          href="https://www.linkedin.com/in/shreshtha-agarwal-69935a271"
+          href="https://www.linkedin.com/in/shreshtha-agarwal-211a65279/"
           target="_blank"
         >
           <BsLinkedin />
