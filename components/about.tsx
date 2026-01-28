@@ -39,36 +39,19 @@ const About = () => {
       >
         <p>
           {`
-          Hello there! I'm Shreshtha Agarwal, a passionate and
-          results-driven full-stack developer based in INDIA|Agra. With a
-          solid foundation in Next.js and React.js, I thrive on turning
-          innovative ideas into seamless, user-centric web experiences. 🚀
-          Technical Journey: My journey in the tech realm spans over 2 years,
-          during which I've honed my skills in both frontend and backend
-          development. From designing captivating user interfaces with React.js
-          to architecting robust server-side solutions, I enjoy the intricate
-          dance between creativity and functionality. 🛠️ Tech Stack: I
-          specialize in leveraging the power of Next.js for building
-          high-performance web applications. On the backend, I've dabbled in
-          Nodejs, Express, and MongoDb, ensuring a harmonious
-          integration of all components. 🏆.These experiences have not only sharpened my technical
-          acumen but also instilled a deep appreciation for collaborative
-          problem-solving. 🌐 Continuous Learner: I'm passionate about staying
-          ahead in the ever-evolving tech landscape. Whether it's adopting
-          emerging technologies or fine-tuning my current skill set, I believe
-          in the importance of continuous learning to deliver cutting-edge
-          solutions. 🎨 Beyond Code: While I find immense joy in coding, I also
-          have a creative side that is drawn to design aesthetics and user
-          experience. Balancing the technical with the artistic allows me to
-          create applications that not only function flawlessly but also
-          captivate the user. 🌟 Let's Connect: I'm always open to new
-          opportunities, collaborations, and connecting with fellow tech
-          enthusiasts. Whether you want to discuss the latest tech trends,
-          explore potential collaborations, or just have a friendly chat, feel
-          free to reach out! 📬 Contact Information: Email: shreshthaagarwal1234@gmail.com
-           Looking forward to connecting with
-          like-minded individuals and contributing to the exciting world of web
-          development!`}
+          Hi, I’m Shreshtha Agarwal, a Next.js-focused Full Stack Developer based in Agra, India. I build fast, scalable, and SEO-optimized web applications that turn ideas into real, user-friendly products.
+
+I have over 2+ years of experience working with Next.js, React, Tailwind CSS, Redux Toolkit, Node.js, Express, MongoDB, and Supabase. My work focuses on creating production-ready apps with clean UI, strong performance, and business-driven features like authentication, dashboards, payments, and content management.
+
+I’ve built real products such as Radha Rani Handicrafts, an SEO-optimized business website, and TuneWave, a full-stack music SaaS platform with authentication, admin panels, and subscriptions. These projects reflect my approach: combining solid engineering with thoughtful user experience.
+
+I enjoy solving real problems for startups and businesses—whether that’s improving performance, structuring scalable frontends, or building MVPs quickly and cleanly.
+
+I’m always open to opportunities, collaborations, and remote work where I can help teams build and scale modern web products.
+
+📧 Email: shreshthaagarwal1234@gmail.com
+          
+          `}
         </p>
       </motion.div>
     </motion.section>
