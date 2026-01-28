@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-<<<<<<< HEAD
 import { client } from "@/lib/client";
 
 const containerVariants = {
@@ -61,27 +60,11 @@ const shimmerVariants = {
       ease: "linear",
     },
   },
-=======
-import {  client } from "@/lib/client";
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
->>>>>>> 89fbd38c943a7592ffb81ccd386ef57453fc24f7
 };
 
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
   const [skills, setSkills] = useState([]);
-<<<<<<< HEAD
   const [loading, setLoading] = useState(true);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -93,20 +76,12 @@ export default function Skills() {
       .then((data) => setSkills(data))
       .catch((error) => console.error("Error fetching skills:", error))
       .finally(() => setLoading(false));
-=======
-
-  useEffect(() => {
-    const query = '*[_type == "skills"]';
-
-    client.fetch(query).then((data) => setSkills(data));
->>>>>>> 89fbd38c943a7592ffb81ccd386ef57453fc24f7
   }, []);
 
   return (
     <section
       id="skills"
       ref={ref}
-<<<<<<< HEAD
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 perspective-1000"
     >
       <SectionHeading>My skills</SectionHeading>
@@ -268,28 +243,6 @@ export default function Skills() {
           }}
         />
       </div>
-=======
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
-    >
-      <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skills.map((skill:any, index) => (
-          <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 "
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill.name}
-          </motion.li>
-        ))}
-      </ul>
->>>>>>> 89fbd38c943a7592ffb81ccd386ef57453fc24f7
     </section>
   );
 }
