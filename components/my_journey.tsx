@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import { HiLocationMarker, HiCalendar } from "react-icons/hi";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("My Journey");
   const [experiences, setExperiences] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -28,7 +28,7 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="my_journey" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My Journey</SectionHeading>
 
       {loading ? (
