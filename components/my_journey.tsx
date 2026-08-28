@@ -29,7 +29,7 @@ export default function Experience() {
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>My Journey</SectionHeading>
 
       {loading ? (
         <div className="flex flex-col justify-center items-center min-h-[300px] gap-4">
@@ -38,7 +38,7 @@ export default function Experience() {
             <div className="absolute top-0 left-0 animate-ping rounded-full h-16 w-16 border-4 border-purple-300 opacity-20"></div>
           </div>
           <p className="text-gray-500 dark:text-gray-400 animate-pulse">
-            Loading experiences...
+            Loading...
           </p>
         </div>
       ) : experiences.length === 0 ? (
