@@ -1,57 +1,91 @@
+
 "use client";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { useRef } from "react";
-import { client } from "@/lib/client";
-import React, { useEffect, useState } from "react";
+
 const About = () => {
   const { ref } = useSectionInView("About");
-  const [about, setAbout] = useState([]);
-  useEffect(() => {
-    const query = '*[_type == "about"]';
+  const reference = useRef<HTMLDivElement>(null);
 
-    client.fetch(query).then((data) => setAbout(data));
-  }, []);
-  const refrence = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
-    target: refrence,
+    target: reference,
     offset: ["0 1", "1.33 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1.1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const scaleProgress = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0.8, 1.1]
+  );
+
+  const opacityProgress = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0.6, 1]
+  );
+
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      id="about"
+      className="mb-28 max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-40"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about"
     >
       <SectionHeading>About me</SectionHeading>
+
       <motion.div
-        ref={refrence}
+        ref={reference}
         style={{
-          scale: scaleProgess,
-          opacity: opacityProgess,
+          scale: scaleProgress,
+          opacity: opacityProgress,
         }}
       >
         <p>
-          {`
-          Hi, I’m Shreshtha Agarwal, a Next.js-focused Full Stack Developer based in Agra, India. I build fast, scalable, and SEO-optimized web applications that turn ideas into real, user-friendly products.
+          Hi, I&apos;m Shreshtha Agarwal, a frontend developer based in Agra,
+          India, focused on React and Next.js.
+        </p>
 
-I have over 2+ years of experience working with Next.js, React, Tailwind CSS, Redux Toolkit, Node.js, Express, MongoDB, and Supabase. My work focuses on creating production-ready apps with clean UI, strong performance, and business-driven features like authentication, dashboards, payments, and content management.
+        <p className="mt-4">
+          I started learning programming and web development in 2020 and have
+          since built and deployed web applications covering e-commerce,
+          real-time communication, media streaming, authentication, API
+          integration, and content management.
+        </p>
 
-I’ve built real products such as Radha Rani Handicrafts, an SEO-optimized business website, and TuneWave, a full-stack music SaaS platform with authentication, admin panels, and subscriptions. These projects reflect my approach: combining solid engineering with thoughtful user experience.
+        <p className="mt-4">
+          My main tools include{" "}
+          <strong>
+            React, Next.js, TypeScript, JavaScript, Tailwind CSS, Redux
+            Toolkit, Node.js, Supabase, Sanity CMS, and REST APIs
+          </strong>
+          . I enjoy building responsive interfaces, connecting frontend
+          applications to APIs, and turning ideas into usable products.
+        </p>
 
-I enjoy solving real problems for startups and businesses—whether that’s improving performance, structuring scalable frontends, or building MVPs quickly and cleanly.
+        <p className="mt-4">
+          Some of my projects include{" "}
+          <strong>Radha Rani Handicrafts</strong>, an e-commerce website for a
+          real business; <strong>MusicWave</strong>, a full-stack music
+          platform; an <strong>Anime Streaming Platform</strong>; and a
+          <strong> real-time Discord-style chat application</strong>.
+        </p>
 
-I’m always open to opportunities, collaborations, and remote work where I can help teams build and scale modern web products.
+        <p className="mt-4">
+          I&apos;m currently pursuing my{" "}
+          <strong>Bachelor of Computer Applications (BCA)</strong> at Amity
+          University Online and looking for my first professional opportunity
+          in frontend development.
+        </p>
 
-📧 Email: shreshthaagarwal1234@gmail.com
-          
-          `}
+        <p className="mt-4">
+          I&apos;m particularly interested in React/Next.js roles where I can
+          contribute to real products, work with experienced developers, and
+          continue improving through practical engineering experience.
         </p>
       </motion.div>
     </motion.section>
@@ -59,3 +93,4 @@ I’m always open to opportunities, collaborations, and remote work where I can 
 };
 
 export default About;
+
