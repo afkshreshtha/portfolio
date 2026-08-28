@@ -67,13 +67,18 @@ const About = () => {
           applications to APIs, and turning ideas into usable products.
         </p>
 
-        <p className="mt-4">
-          Some of my projects include{" "}
-          <strong>Radha Rani Handicrafts</strong>, an e-commerce website for a
-          real business; <strong>MusicWave</strong>, a full-stack music
-          platform; an <strong>Anime Streaming Platform</strong>; and a
-          <strong> real-time Discord-style chat application</strong>.
-        </p>
+
+<p className="mt-4">
+  Some of my projects include{" "}
+  <strong>Tabrova</strong>, a full-stack web application;{" "}
+  <strong>Radha Rani Handicrafts</strong>, an e-commerce website for a real
+  business; <strong>MusicWave</strong>, a full-stack music platform; and a{" "}
+  <strong>real-time Discord-style chat application</strong>. These projects
+  have given me hands-on experience with frontend development, APIs,
+  authentication, state management, responsive UI, and production deployment.
+</p>
+
+
 
         <p className="mt-4">
           I&apos;m currently pursuing my{" "}
