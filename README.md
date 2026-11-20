@@ -2,7 +2,7 @@
 
 A modern, responsive developer portfolio built with [Next.js](https://nextjs.org/) to showcase my projects, technical skills, and experience.
 
-🔗 **Live Demo:** [your-portfolio-url.vercel.app](https://your-portfolio-url.vercel.app)
+🔗 **Live Demo:** https://shreshtha.vercel.app/
 
 ![Portfolio Preview](./public/image.png) *(Replace with a screenshot of your homepage)*
 
