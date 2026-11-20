@@ -4,7 +4,7 @@ A modern, responsive developer portfolio built with [Next.js](https://nextjs.org
 
 🔗 **Live Demo:** [your-portfolio-url.vercel.app](https://your-portfolio-url.vercel.app)
 
-![Portfolio Preview](./public/preview.png) *(Replace with a screenshot of your homepage)*
+![Portfolio Preview](./public/image.png) *(Replace with a screenshot of your homepage)*
 
 ---
 
@@ -39,5 +39,5 @@ Make sure you have [Node.js](https://nodejs.org/) (v18 or higher) installed.
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-   cd your-repo-name
+   git clone [https://github.com/afkshreshtha/portfolio.git](https://github.com/afkshreshtha/porfolio.git)
+   cd portfolio
