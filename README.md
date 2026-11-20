@@ -4,7 +4,7 @@ A modern, responsive developer portfolio built with [Next.js](https://nextjs.org
 
 🔗 **Live Demo:** https://shreshtha.vercel.app/
 
-![Portfolio Preview](./public/image.png) *(Replace with a screenshot of your homepage)*
+![Portfolio Preview](./public/image.png) 
 
 ---
 
